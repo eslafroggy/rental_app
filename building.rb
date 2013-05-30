@@ -7,10 +7,14 @@ class Building
     @has_doorman = has_doorman
     @is_walkup = is_walkup
     @num_floor = num_floors
-    @apartments = []
+    @apartments = {}
   end
   def to_s
-    "The #{@style} building #{@address} has #{@apartments.count} apartments"
+    p "The #{@style} building #{@address} has #{@apartments.count} apartments"
   end
      
 end
+
+p b1 = Building.new("100 King", "modern", "yes", "yes", 5)
+ 
+ 

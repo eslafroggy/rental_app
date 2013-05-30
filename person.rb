@@ -6,6 +6,8 @@ class Person
     @gender = gender
   end
   def to_s
-    puts "#{@name} is a #{@age} years old #{gender}"
+     "#{@name} is a #{@age} years old #{@gender}"
   end
 end
+
+
